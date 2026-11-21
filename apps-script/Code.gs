@@ -168,7 +168,7 @@ function onOpen() {
 function formatAll() {
   const ss = SS();
   ss.getSheets().filter(sh => isCallSheet_(sh)).forEach(sh => formatSheet(sh));
-  ss.toast('Все листы оформлены', 'Обзвон', 4);
+  try { ss.toast('Все листы оформлены', 'Обзвон', 4); } catch (e) {}
 }
 function formatCurrent() { formatSheet(getSheet()); }
 
@@ -211,7 +211,7 @@ function migrateColumns() {
     if (u) sh.deleteColumn(u);
     formatSheet(sh);
   });
-  ss.toast('Колонки обновлены', 'Обзвон', 4);
+  try { ss.toast('Колонки обновлены', 'Обзвон', 4); } catch (e) {}
 }
 
 // лист обзвона = есть колонка key/url и phones

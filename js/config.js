@@ -1,5 +1,5 @@
 /* Глобальные константы и DOM-ссылки */
-const API_URL='https://script.google.com/macros/s/AKfycbxvpiTH_ZPgnUoQGu--oN0WWj6POh2vcOVNuY5XQIkF1tVgHHhJWQ57VsKVYJCKlnwD/exec';
+const API_URL='https://script.google.com/macros/s/AKfycbyfMOzj7g6IXwOCeFVHHDPXdFRE-9uUGxoXsYxOqn03wCfQvm6P5EtDZjQ45SRneJj0/exec';
 const LS_KEY='krasota_calls_v3';
 const CONTACTS=window.CONTACTS||{};
 
